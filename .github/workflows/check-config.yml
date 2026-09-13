@@ -23,7 +23,7 @@ jobs:
       - name: Check assigned identity and shared secret
         env:
           STUDENT_GITHUB: ${{ vars.STUDENT_GITHUB }}
-          COURSE_TOKEN: ${{ secrets.VERIFICATION_INTENTIONALLY_MISSING_TOKEN }}
+          COURSE_TOKEN: ${{ secrets.OSCAMP_2026F_BASE_TOKEN }}
         run: |
           python3 - <<'PYTHON'
           import os
